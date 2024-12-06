@@ -73,7 +73,7 @@ export const extensions = [
   skippableComponent('linkPreview', '[link preview]'),
   TiptapTweet.extend({ renderText: () => '[tweet]' }),
   TiptapSpoiler.extend({ renderHTML: () => ['span', '[spoiler]', 0] }),
-] as Extension
+] as Extension[]
 
 const extensionSchema = getSchema(extensions)
 const extensionSerializers = getTextSerializersFromSchema(extensionSchema)
